@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif; /* Formal font style for the entire page */
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
@@ -19,13 +19,28 @@ section {
     border-radius: 10px;
 }
 
-h2 {
+h2, h3, h4 {
     color: #1f2937;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px; /* Adjusted font size for consistency */
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 ul {
     padding-left: 20px;
 }
+
 nav {
     margin-top: 20px;
 }
@@ -40,13 +55,12 @@ nav {
         nav a:hover {
             text-decoration: underline;
         }
-html {
-    scroll-behavior: smooth;
-}
+
 section {
     max-width: 900px;
     margin: 30px auto;
 }
+
 footer {
     text-align: center;
     padding: 20px;
@@ -54,3 +68,41 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
+/* About Section Styles */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.about-image {
+    width: 550px; /* Set the width */
+    height: 550px; /* Set the height equal to the width for a square */
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.name-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #1f2937;
+}
+
+.short-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6; /* Adjust line height for better readability */
+    font-weight: normal; /* Normal weight for a more formal look */
+}
+
+.project h3 {
+    font-size: 24px; /* Ensure "Project" headings match */
+    margin-bottom: 10px; /* Add space between title and links */
+}
+
+
