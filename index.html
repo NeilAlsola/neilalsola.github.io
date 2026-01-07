@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neil Alsola | Personal Website</title>
@@ -12,49 +11,146 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Adding Smooth Scroll CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling in browsers */
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Add animation when the sections come into view */
+        section {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* Style for header navigation */
+        header nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+            header nav a {
+                color: white;
+                padding: 14px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+                header nav a:hover {
+                    background-color: #575757;
+                }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Neil Francis P. Alsola</h1>
-        <p>BSIT Student | Aspiring Web Developer</p>
-
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contacts</a>
         </nav>
     </header>
 
-
-    <section id="about">
-
+    <section id="about" class="fade-in">
         <h2>About Me</h2>
-        <p>
-            I am a BSIT student with a strong interest in web development
-            and system design. I enjoy building academic and personal projects.
-        </p>
+        <div class="about-content">
+            <img src="images/me.jpg" alt="Neil Francis P. Alsola" class="about-image">
+            <div class="about-text">
+                <p class="name-title">
+                    Neil Francis P. Alsola <br>
+                    BSIT Student | Aspiring UI and UX Designer
+                </p>
+                <p class="short-description">
+                    I am Neil Francis P. Alsola, a BSIT student at CTU Consolacion campus. I graduated from Mandaue City School for the Arts during my Senior High School days. Designing has always been my passion, and as a visual artist, I keep learning from others who have more experience. I try to get better every day, not just as a designer, but also as a person. My goal is to become a UI and UX designer because I want to create designs that bring change and improve people's experiences. I believe in learning, being humble, and growing, and I’m determined to keep improving, step by step, so I can create something meaningful in this industry.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-
+    <section id="projects" class="fade-in">
         <h2>Projects</h2>
-        <ul>
-            <li>Online OJT Monitoring System</li>
-            <li>HRM System</li>
-            <li>Fitness Tracker with Meal Planner</li>
-        </ul>
+
+        <div class="project">
+            <h3>Online OJT Portal and Monitoring - CTU Consolacion Campus</h3>
+            <h4>Prototypes</h4>
+            <ul>
+                <li><a href="https://www.figma.com/proto/V6kv63TIZkxzJa59WbHLl8/OOJTTPM-CC-Company-Side-M?node-id=4-4&p=f&t=k5i16H9xlb8zNYWg-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A4" target="_blank">Company Portal</a></li>
+                <li><a href="https://www.figma.com/proto/gSFHNxBrBj6uS3VCEcXHaB/OOJTPM-CC-Intern-Side-M?node-id=1-2&p=f&t=hRsVPTkxpq66ep0I-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">Intern Portal</a></li>
+                <li><a href="https://www.figma.com/proto/YDgxB0f53zFPs8wigsObOM/OOJTPM-CC-Coordinator-Side-M?t=je3Nw4qbTXSc6VfS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=43-558&starting-point-node-id=43%3A558" target="_blank">Coordinator Portal</a></li>
+            </ul>
+
+            <h4>Design Process</h4>
+            <ul>
+                <li><a href="https://www.figma.com/design/V6kv63TIZkxzJa59WbHLl8/OOJTTPM-CC-Company-Side-M?node-id=0-1&t=x5epsPQfi9fE0SFg-1" target="_blank">Company Portal</a></li>
+                <li><a href="https://www.figma.com/design/gSFHNxBrBj6uS3VCEcXHaB/OOJTPM-CC-Intern-Side-M?node-id=0-1&t=v7Vrjy6EkiDStDYF-1" target="_blank">Intern Portal</a></li>
+                <li><a href="https://www.figma.com/design/YDgxB0f53zFPs8wigsObOM/OOJTPM-CC-Coordinator-Side-M?t=v7Vrjy6EkiDStDYF-1" target="_blank">Coordinator Portal</a></li>
+            </ul>
+
+            <div style="height: 20px;"></div>
+
+            <h2>Work in Progress</h2>
+        </div>
+
+        <div class="project">
+            <h3>QR Code-based Library Book Borrowing Tracker</h3>
+            <h4>Prototype</h4>
+            <ul>
+                <li><a href="https://www.figma.com/proto/g7rMR2EfLTmlwewm5b08PC/QR-Code-based-Library-Book-Borrowing-Tracker?node-id=3-15&p=f&t=ge6nmpPZaqC4Al7M-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A15" target="_blank">QRCBLB Book Tracker Portal</a></li>
+            </ul>
+
+            <h4>Design Process</h4>
+            <ul>
+                <li><a href="https://www.figma.com/design/g7rMR2EfLTmlwewm5b08PC/QR-Code-based-Library-Book-Borrowing-Tracker?node-id=0-1&t=edqIZJfTgNIZFvMb-1" target="_blank">QRCBLB Book Tracker Portal</a></li>
+            </ul>
+        </div>
     </section>
 
-    <section id="contact">
-
-        <h2>Contact</h2>
-        <p>Email: neilfrancisparadelaalsola@gmail.com</p>
+    <section id="contact" class="fade-in">
+        <h2>Contacts</h2>
+        <p>Email: franzparadela@gmail.com</p>
+        <p>Facebook: <a href="https://www.facebook.com/franz.paradela03" target="_blank">Franz Paradela</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/real.frnz/" target="_blank">Franz Paradela</a></p>
+        <p>Phone number: 09752204251</p>
     </section>
+
     <footer>
-        <p>� 2026 Neil Francis P. Alsola. All rights reserved.</p>
+        <p>© 2026 Neil Francis P. Alsola. All rights reserved.</p>
     </footer>
+
+    <!-- Adding Smooth Scroll JS -->
+    <script>
+        // Adding smooth scrolling functionality if scroll-behavior doesn't work in some browsers
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default link behavior
+                const targetId = this.getAttribute('href').substring(1); // Get the target ID
+                const targetElement = document.getElementById(targetId); // Find the element by ID
+                targetElement.scrollIntoView({
+                    behavior: 'smooth', // Smooth scrolling effect
+                    block: 'start' // Align to the top of the screen
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
-
