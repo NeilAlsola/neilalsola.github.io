@@ -52,9 +52,9 @@ nav {
         font-weight: bold;
     }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    nav a:hover {
+        text-decoration: underline;
+}
 
 section {
     max-width: 900px;
@@ -78,9 +78,9 @@ footer {
 }
 
 .about-image {
-    width: 550px; /* Set the width */
-    height: 550px; /* Set the height equal to the width for a square */
-    object-fit: cover; /* Ensure the image covers the area without distorting */
+    width: 100%;
+    max-width: 550px; /* Keeps the image from growing larger than its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .about-text {
@@ -105,4 +105,44 @@ footer {
     margin-bottom: 10px; /* Add space between title and links */
 }
 
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    section {
+        max-width: 100%;
+        margin: 10px;
+    }
 
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
